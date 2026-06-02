@@ -13,6 +13,7 @@ def get_adj():
     # write your code for this function below this line
 
     # don't modify the return statement below...
+    word = input("Enter an adjective: ")
     return word
 
 
@@ -24,6 +25,7 @@ def get_verb():
     # write your code for this function below this line
 
     # don't modify the return statement below... leave it as the last line in this function
+    word = input("Enter a verb: ")
     return word
 
 
@@ -35,6 +37,7 @@ def get_plural_noun():
     # write your code for this function below this line
 
     # don't modify the return statement below... leave it as the last line in this function
+    word = input("Enter a plural noun: ")
     return word
 
 
@@ -46,6 +49,7 @@ def get_proper_noun():
     # write your code for this function below this line
 
     # don't modify the return statement below... leave it as the last line in this function
+    word = input("Enter a proper noun: ")
     return word
 
 
@@ -65,6 +69,14 @@ def generate():
 
     # write your code for this function below this line...
     # feel free to modify the given poem code and add any additional code as necessary
+    adjective_1 = input("Enter the first adjective: ")
+    adjective_2 = input("Enter the second adjective: ")
+    verb_1 = input("Enter the first verb: ")
+    verb_2 = input("Enter the second verb: ")
+    plural_noun_1 = input("Enter the first plural noun : ")
+    plural_noun_2 = input("Enter the second plural noun: ")
+    proper_noun_1 = input("Enter the first proper noun: ")
+    proper_noun_2 = input("Enter the second proper noun: ")
 
     poem = """
     'Twas {adjective_1}, and the slithy toves
@@ -76,7 +88,16 @@ def generate():
     The jaws that {verb_2}, the {plural_noun_2} that catch!
     Beware the Jubjub bird, and shun
     The frumious {proper_noun_2}!
-  """
+  """.format(
+        adjective_1 = adjective_1,
+        adjective_2 = adjective_2,
+        verb_1 = verb_1,
+        verb_2 = verb_2,
+        plural_noun_1 = plural_noun_1,
+        plural_noun_2 = plural_noun_2,
+        proper_noun_1 = proper_noun_1,
+        proper_noun_2 = proper_noun_2
+    )
 
     # don't modify the print statement below... leave it as the last line in this function
     print(poem)
